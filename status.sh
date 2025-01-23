@@ -2,10 +2,10 @@
 
 ##
 # Script  that returns the current server status
-#  memory usge 
-# cpu load
-# tcp connection 
-# kernal version
+# Memory usge 
+# Cpu load
+# Tcp connection 
+# Kernal version
 ##
 
 #variable declearing
