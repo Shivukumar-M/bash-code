@@ -48,6 +48,29 @@ function all_check() {
 
 }
 # call the fuction
+menu(){ 
+        echo -ne "  
+1) Memeory usage
+2) Cpu load
+3) Number of cpu connection
+4) kernal version
+5) check all
+0)  Exit
+choose an option: "
+                read Num
+                case $Num in
+                        1) memory_check ; menu ;;
+                        2) cpu_check ; menu ;;
+                        3) tcp_check ; menu ;;
+                        4) kernal_check ; menu ;;
+                        5) all_check ; menu ;;
+                        0) exit 0 ;;
+                        *) echo -e "Wrong option " ; menu ;;
+                esac
 
-all_check
+
+}
+# fuction call
+menu
+
 
